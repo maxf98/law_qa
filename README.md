@@ -4,11 +4,7 @@ This project introduces Chatbot für das Deutsche Recht, a tool designed to act 
 
 ## Setup
 ### Backend
-For starting with the project follow this steps:
-
-```
-git checkout https://gitlab.lrz.de/lab-courses/nlp-lab-ws2023/teams-tobias/law_qa.git
-```
+Start by cloning the repo.
 
 Then you will need to create an environment for the backend.
 
