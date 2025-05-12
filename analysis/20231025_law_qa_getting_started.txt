@@ -1,0 +1,26 @@
+Q&A Guided Legal Document Summarization
+
+Quite often summarization techniques aim to condense textual data to the most vital information. However
+the vitalness of the information might depend on the end user in question. In this project we will look at
+summarization techniques that are influenced by a user query and should reflect the interest of the user
+better.
+Additionally to working on general text data this system will be also trained and tested on a corpus of legal
+texts with the specific problems and particularities of that domain.
+
+Project outline:
+
+We want to build a text summarization system for the field of Legal Language Processing who will be tasked with summarizing + answering questions about court rulings. For this purpose we will look at summarization techniques utilizing LLM methods and Q&A style interactions afterwards. Our goal is to have this run on our own LLM architecture that is trained on text data from a law context. The system should have a user facing frontend and give a generalized summary + afford the user the possibility to ask questions.
+
+Relevant questions are:
+
+Do we need to fine-tune a model for this task? How is out-of-the-box performance for existing models?
+Can we include more text as background knowledge such as actual written law that is related to the subjects of the court rulings?
+Are there any projects (likely from industry) that try to tackle these summaries specifically?
+
+Getting started:
+
+Look up possible data sets of court rulings (there are many).
+Check relevant literature on legal language processing from the last 12 month (ex. NLLP Workshop)
+Try to "solve" the task with an existing model (such as GPT-4) and look up open source models we could run and try the same thing on.
+Datasets for benchmarking summarization and Q&A for the legal field?
+Look for existing systems without a legal focus and how they approach things.

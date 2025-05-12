@@ -1,0 +1,132 @@
+:root {
+  --primary-background-color: #f8f8f8;
+  --secondary-background-color: #1f1b24;
+  --text-color: white;
+  --button-color: #363062;
+  --button-hover-color: #45a049;
+  /* Add more color variables as needed */
+}
+
+#root {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  font-family: Helvetica;
+  color: var(--text-color);
+}
+
+.sidebar {
+  position: fixed;
+  right: -440px; /* Adjust width */
+  top: 0;
+  width: 450px; /* Adjust width */
+  bottom: 0;
+  background-color: var(--secondary-background-color);
+  color: white;
+  transition: right 0.3s ease;
+  overflow: auto;
+  z-index: 1000; /* Ensure it's above main content */
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+#Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#Header h3 {
+  align-self: flex-end;
+}
+
+.basic-button {
+  border: none;
+  background-color: var(--button-color);
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--text-color);
+  border-radius: 5px;
+}
+
+.basic-button:hover {
+  background-color: var(--button-hover-color);
+  opacity: 1;
+}
+
+.mode-button {
+  margin: 10px;
+  opacity: 0.5;
+}
+
+.selected {
+  border: 2px solid var(--text-color);
+  opacity: 1;
+}
+
+.SummariseButton {
+  margin: 30px;
+  height: 40px;
+}
+
+#Summary {
+  background-color: #363062;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  margin: 30px;
+  text-align: left;
+  border-radius: 10px;
+}
+
+#LegalTextArea {
+  width: 100%;
+  height: 300px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: var(--secondary-background-color);
+  color: white;
+  font-size: 16px;
+}
+
+.chatcontainer {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  top: 70px;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.langButton {
+  background-color: var(--text-color);
+  opacity: 0.3;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.langButton.selected {
+  opacity: 1;
+}
+
+.langButton.selected:hover {
+  background-color: var(--text-color);
+}
+
+.langButton:hover {
+  background-color: var(--button-color);
+  opacity: 1;
+}

@@ -1,0 +1,78 @@
+.referenceItem {
+  border: none;
+  background-color: var(--button-color);
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--text-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.pre-wrap {
+  white-space: pre-wrap;
+}
+
+.referenceItem .blue {
+  background-color: blue;
+}
+
+.referenceItem:hover {
+  cursor: pointer;
+  background-color: var(--button-hover-color);
+}
+
+.referenceList {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#referenceSidebar {
+  height: 100%;
+  padding: 40px;
+  margin-bottom: 200px;
+  box-sizing: border-box;
+  text-align: left;
+  line-height: 1.5;
+  border-left: 8px var(--button-color) solid;
+}
+
+.sidebarHeader {
+  display: flex;
+  justify-content: end;
+}
+
+.closeButton {
+  background-color: var(--secondary-background-color);
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+}
+
+.transButton {
+  background-color: var(--secondary-background-color);
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+}
+
+.transButton:hover {
+  color: var(--button-hover-color);
+}
+
+.closeButton:hover {
+  color: var(--button-hover-color);
+}
+
+.text-reference {
+  cursor: pointer;
+  color: lightseagreen;
+}
+
+.text-reference:hover {
+  color: var(--button-hover-color);
+}
